@@ -119,12 +119,15 @@ nav ul li {
     }
 }
 
+/* ABOUT */
+
 .about-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 2rem 0;
+    display: grid;
+    gap: 4rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin: 4rem 0;
 }
+
 
 .about-card {
     display: flex;
@@ -132,27 +135,44 @@ nav ul li {
     align-items: flex-start;
     justify-content: center;
     margin: 2rem 0;
-    background-color: #ffffff;
-    width: 13rem;
-    height: 13rem;
-    padding: 2rem;
+    background-color: #fff;
+    padding: 3rem;
     border-radius: 5px;
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.15);
+}
+
+.about-card:hover {
+    background-color: #FEA116;
+    transition: color 0.1s ease;
 }
 
 .about-icon {
     color: #FEA116;
     width: auto;
     height: 50px;
+    transition: color 0.1s ease;
 }
 
+.about-card:hover .about-icon {
+    color: #fff;
+}
 
 .about-card h3 {
     font-size: 1.5rem;
     margin-bottom: 0rem;
+    transition: color 0.1s ease;
+}
+
+.about-card:hover h3 {
+    color: #fff;
 }
 
 .about-card p {
     font-size: 1rem;
     margin-bottom: 0rem;
+    transition: color 0.1s ease;
+}
+
+.about-card:hover p {
+    color: #fff;
 }
