@@ -4,6 +4,9 @@ body {
     padding: 0;
 }
 
+.section {
+    padding: 0rem 10rem;
+}
 
 header {
     color: #fff;
@@ -59,7 +62,6 @@ nav ul li {
     align-items: center;
     justify-content: space-between;
     color: white;
-    padding: 0 10rem;
 }
 
 
@@ -117,206 +119,40 @@ nav ul li {
     }
 }
 
-/* About Us Section */
-#about {
-    padding: 4rem 2rem;
-    background-color: #f9f9f9;
-    text-align: center;
-}
-
-#about h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-}
-
-#about p {
-    max-width: 600px;
-    margin: 0 auto;
-    font-size: 1rem;
-    line-height: 1.5;
-}
-
-#about .nav-button {
-    margin-top: 1rem;
-    display: inline-block;
-}
-
-/* Menu Section */
-#menu {
-    padding: 4rem 2rem;
-    text-align: center;
-}
-
-#menu h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
-}
-
-.menu-tabs {
-    margin-bottom: 2rem;
-}
-
-.menu-button {
-    background: none;
-    border: none;
-    color: #FEA116;
-    font-size: 1.2rem;
-    cursor: pointer;
-    margin: 0 1rem;
-    text-transform: uppercase;
-}
-
-.menu-button:hover {
-    color: #FF9800;
-}
-
-.menu-content {
-    display: none;
-}
-
-.menu-content p {
-    font-size: 1.1rem;
-}
-
-/* Reservation Section */
-#reservation {
-    padding: 4rem 2rem;
-    background-color: #f1f1f1;
-    text-align: center;
-}
-
-#reservation h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
-}
-
-#reservation-form {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-#reservation-form input,
-#reservation-form select,
-#reservation-form textarea {
-    width: 100%;
-    padding: 0.75rem;
-    margin: 0.5rem 0;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    font-size: 1rem;
-}
-
-#reservation-form button {
-    margin-top: 1rem;
-}
-
-/* Team Info Section */
-#team {
-    padding: 4rem 2rem;
-    text-align: center;
-}
-
-#team h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
-}
-
-.team-grid {
+.about-container {
     display: flex;
     justify-content: center;
-    gap: 2rem;
-    flex-wrap: wrap;
+    align-items: center;
+    margin: 2rem 0;
 }
 
-.team-member {
-    background: #fff;
-    padding: 1rem;
-    border: 1px solid #ddd;
+.about-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 2rem 0;
+    background-color: #ffffff;
+    width: 13rem;
+    height: 13rem;
+    padding: 2rem;
     border-radius: 5px;
-    text-align: center;
-    width: 200px;
-    position: relative;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.15);
 }
 
-.team-member img {
-    width: 100%;
-    border-radius: 50%;
+.about-icon {
+    color: #FEA116;
+    width: auto;
+    height: 50px;
 }
 
-.team-member h3 {
-    font-size: 1.2rem;
-    margin: 0.5rem 0;
+
+.about-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0rem;
 }
 
-.team-member p {
-    font-size: 0.9rem;
-    color: #666;
-}
-
-.social-icons {
-    display: none;
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.team-member:hover .social-icons {
-    display: block;
-}
-
-/* Testimonials Section */
-#testimonials {
-    padding: 4rem 2rem;
-    background-color: #f9f9f9;
-    text-align: center;
-}
-
-#testimonials h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
-}
-
-.testimonial {
-    background: #fff;
-    border: 1px solid #ddd;
-    padding: 1.5rem;
-    border-radius: 5px;
-    margin: 1rem auto;
-    max-width: 500px;
-}
-
-.testimonial:hover {
-    background-color: #FFE0B2;
-}
-
-.testimonial p {
+.about-card p {
     font-size: 1rem;
-    color: #555;
-}
-
-.testimonial h3 {
-    font-size: 1rem;
-    margin-top: 1rem;
-    color: #333;
-}
-
-/* Scroll to Top Button */
-#scroll-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: #FEA116;
-    color: white;
-    border: none;
-    border-radius: 50%;
-    padding: 10px 15px;
-    font-size: 1.2rem;
-    display: none;
-    cursor: pointer;
-    z-index: 100;
-}
-
-#scroll-top:hover {
-    background: #FF9800;
+    margin-bottom: 0rem;
 }
