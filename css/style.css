@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 body {
     font-family: Poppins, Arial, sans-serif;
@@ -13,7 +14,6 @@ body {
 
 .section {
     padding: 0rem 10rem;
-
 }
 
 .btn {
@@ -96,6 +96,13 @@ body {
     cursor: pointer;
 }
 
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+}
+
 /* HERO */
 .hero-container {
     display: flex;
@@ -152,6 +159,7 @@ body {
     justify-content: space-between;
     align-items: center;
     gap: 4rem;
+    margin: 2rem 0;
 }
 
 
@@ -204,10 +212,69 @@ body {
     color: #fff;
 }
 
+/* About Us Section */
+#about-us {
+    background-color: #F1F8FF;
+}
+
+.title {
+    font-family: Pacifico, Arial, sans-serif;
+    font-weight: 100;
+    font-size: 1.5rem;
+    color: #FF9800;
+    margin-bottom: 0;
+}
+
+.heading {
+    font-size: 2.5rem;
+    color: #0F172B;
+    margin-top: 0;
+}
+
+.heading-icon {
+    color: #FEA116;
+    width: auto;
+    height: 2rem;
+    transition: color 0.1s ease;
+}
+
+.about-us-text p {
+    font-size: 1.1rem;
+    color: #666565;
+}
+
+/* -------- Responsive CSS -------- */
 
 @media (max-width: 1024px) {
     .section {
-        padding: 0 5rem;
+        padding: 0 4rem;
+    }
+
+    .btn {
+        padding: 8px 16px;
+        font-size: 1rem;
+    }
+
+    .header-logo {
+        width: 200px;
+    }
+
+    .nav {
+        margin: 0 -4rem;
+    }
+
+    .nav-container {
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    .nav-item {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+    .hero-text {
+        max-width: 80%;
     }
 
     .hero-text h1 {
@@ -215,16 +282,28 @@ body {
     }
 
     .hero-text p {
-        font-size: 1.3rem;
+        font-size: 1rem;
     }
 
     .hero-img {
-        width: 70%;
+        width: 40%;
     }
 
     .about-container {
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         gap: 2rem;
+        margin: 2rem 0;
+    }
+
+    .about-card {
+        padding: 2rem;
+        text-align: center;
+        margin: 0;
+    }
+
+    .about-card p {
+        font-size: 1rem;
     }
 }
 
@@ -290,9 +369,45 @@ body {
         padding: 0 1rem;
     }
 
+    .header-logo {
+        width: 150px;
+    }
+
+    .nav {
+        margin: 0 -1rem;
+    }
+
     .nav-container {
+        justify-content: space-evenly;
+        flex-direction: row;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .nav-list {
+        display: none;
         flex-direction: column;
-        gap: 1rem;
+        position: absolute;
+        top: 100%;
+        background-color: #0F172B;
+        padding: 1rem;
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    .nav-list.active {
+        display: flex;
+        max-height: 300px;
+    }
+
+    .nav-item {
+        font-size: 1.5rem;
+        padding: 0.5rem 0;
+        text-align: center;
+        color: #fff;
     }
 
     .hero-container {
@@ -304,7 +419,7 @@ body {
     }
 
     .hero-text {
-        max-width: 90%;
+        max-width: 100%;
     }
 
     .hero-text h1 {

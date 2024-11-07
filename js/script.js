@@ -7,5 +7,9 @@ function handleScroll() {
   }
 }
 
+function toggleMenu() {
+  document.querySelector(".nav-list").classList.toggle("active");
+}
+
 window.addEventListener("scroll", handleScroll);
 window.addEventListener("load", handleScroll);
