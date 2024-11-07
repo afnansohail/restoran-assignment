@@ -239,6 +239,7 @@ body {
     font-size: 2.5rem;
     color: #0F172B;
     margin-top: 0;
+    margin-bottom: 0.5rem;
 }
 
 .heading-icon {
@@ -269,7 +270,6 @@ body {
     font-size: 4rem;
     font-weight: 700;
     color: #FEA116;
-    margin: 0;
     margin: 0;
 }
 
