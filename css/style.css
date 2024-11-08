@@ -287,6 +287,49 @@ body {
     gap: 4rem;
 }
 
+/* MENU */
+#menu {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.categories-container {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    border-bottom: 2px solid #d1d1d1;
+}
+
+.category-icon {
+    color: #FEA116;
+    width: auto;
+    height: 40px;
+    transition: color 0.1s ease;
+}
+
+.category {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5px;
+    border-bottom: 4px solid #FEA116;
+}
+
+
+
 
 /* -------- Responsive CSS -------- */
 
