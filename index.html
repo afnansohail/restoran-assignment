@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Restoran</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="sweetalert2.min.css">
     <link href="./images/favicon.png" rel="icon">
 </head>
 
@@ -130,7 +131,7 @@
         </div>
 
         <div class="categories-container">
-            <div class="category">
+            <div class="category active" data-category="breakfast">
                 <h3 class="category-icon">
                     <svg width="41" height="28" viewBox="0 0 41 28" fill="none" xmlns="http://www.w3.org/2000/svg"
                         class="category-icon">
@@ -142,7 +143,7 @@
                 <p>Popular<br><b>Breakfast</b></p>
             </div>
 
-            <div class="category">
+            <div class="category" data-category="lunch">
                 <h3 class="category-icon">
                     <svg width="33" height="28" viewBox="0 0 33 28" fill="none" xmlns="http://www.w3.org/2000/svg"
                         class="category-icon">
@@ -154,7 +155,7 @@
                 <p>Special<br><b>Lunch</b></p>
             </div>
 
-            <div class="category">
+            <div class="category" data-category="dinner">
                 <h3 class="category-icon">
                     <svg width="39" height="48" viewBox="0 0 39 48" xmlns="http://www.w3.org/2000/svg"
                         class="category-icon">
@@ -168,7 +169,98 @@
 
         </div>
 
-        <div class="items-container">
+        <div class="items-container breakfast show">
+            <div class="menu-item">
+                <img src="./images/menu-item.jpg" alt="menu item" class="item-img">
+                <div class="item-text">
+                    <div class="item-name">
+                        <h3 class="item-title">French Toast</h3>
+                        <h3 class="item-price">$115</>
+                    </div>
+                    <hr class="underline">
+                    <p class="item-description">Ipsum ipsum clita erat amet dolor justo diam</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="./images/menu-item.jpg" alt="menu item" class="item-img">
+                <div class="item-text">
+                    <div class="item-name">
+                        <h3 class="item-title">French Toast</h3>
+                        <h3 class="item-price">$115</>
+                    </div>
+                    <hr class="underline">
+                    <p class="item-description">Ipsum ipsum clita erat amet dolor justo diam</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="./images/menu-item.jpg" alt="menu item" class="item-img">
+                <div class="item-text">
+                    <div class="item-name">
+                        <h3 class="item-title">French Toast</h3>
+                        <h3 class="item-price">$115</>
+                    </div>
+                    <hr class="underline">
+                    <p class="item-description">Ipsum ipsum clita erat amet dolor justo diam</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="./images/menu-item.jpg" alt="menu item" class="item-img">
+                <div class="item-text">
+                    <div class="item-name">
+                        <h3 class="item-title">French Toast</h3>
+                        <h3 class="item-price">$115</>
+                    </div>
+                    <hr class="underline">
+                    <p class="item-description">Ipsum ipsum clita erat amet dolor justo diam</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="./images/menu-item.jpg" alt="menu item" class="item-img">
+                <div class="item-text">
+                    <div class="item-name">
+                        <h3 class="item-title">French Toast</h3>
+                        <h3 class="item-price">$115</>
+                    </div>
+                    <hr class="underline">
+                    <p class="item-description">Ipsum ipsum clita erat amet dolor justo diam</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="./images/menu-item.jpg" alt="menu item" class="item-img">
+                <div class="item-text">
+                    <div class="item-name">
+                        <h3 class="item-title">French Toast</h3>
+                        <h3 class="item-price">$115</>
+                    </div>
+                    <hr class="underline">
+                    <p class="item-description">Ipsum ipsum clita erat amet dolor justo diam</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="./images/menu-item.jpg" alt="menu item" class="item-img">
+                <div class="item-text">
+                    <div class="item-name">
+                        <h3 class="item-title">French Toast</h3>
+                        <h3 class="item-price">$115</>
+                    </div>
+                    <hr class="underline">
+                    <p class="item-description">Ipsum ipsum clita erat amet dolor justo diam</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="./images/menu-item.jpg" alt="menu item" class="item-img">
+                <div class="item-text">
+                    <div class="item-name">
+                        <h3 class="item-title">French Toast</h3>
+                        <h3 class="item-price">$115</>
+                    </div>
+                    <hr class="underline">
+                    <p class="item-description">Ipsum ipsum clita erat amet dolor justo diam</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="items-container lunch">
             <div class="menu-item">
                 <img src="./images/menu-item.jpg" alt="menu item" class="item-img">
                 <div class="item-text">
@@ -257,6 +349,98 @@
                     <p class="item-description">Ipsum ipsum clita erat amet dolor justo diam</p>
                 </div>
             </div>
+        </div>
+
+        <div class="items-container dinner">
+            <div class="menu-item">
+                <img src="./images/menu-item.jpg" alt="menu item" class="item-img">
+                <div class="item-text">
+                    <div class="item-name">
+                        <h3 class="item-title">Chicken Chilli Dry</h3>
+                        <h3 class="item-price">$115</>
+                    </div>
+                    <hr class="underline">
+                    <p class="item-description">Ipsum ipsum clita erat amet dolor justo diam</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="./images/menu-item.jpg" alt="menu item" class="item-img">
+                <div class="item-text">
+                    <div class="item-name">
+                        <h3 class="item-title">Chicken Chilli Dry</h3>
+                        <h3 class="item-price">$115</>
+                    </div>
+                    <hr class="underline">
+                    <p class="item-description">Ipsum ipsum clita erat amet dolor justo diam</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="./images/menu-item.jpg" alt="menu item" class="item-img">
+                <div class="item-text">
+                    <div class="item-name">
+                        <h3 class="item-title">Chicken Chilli Dry</h3>
+                        <h3 class="item-price">$115</>
+                    </div>
+                    <hr class="underline">
+                    <p class="item-description">Ipsum ipsum clita erat amet dolor justo diam</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="./images/menu-item.jpg" alt="menu item" class="item-img">
+                <div class="item-text">
+                    <div class="item-name">
+                        <h3 class="item-title">Chicken Chilli Dry</h3>
+                        <h3 class="item-price">$115</>
+                    </div>
+                    <hr class="underline">
+                    <p class="item-description">Ipsum ipsum clita erat amet dolor justo diam</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="./images/menu-item.jpg" alt="menu item" class="item-img">
+                <div class="item-text">
+                    <div class="item-name">
+                        <h3 class="item-title">Chicken Chilli Dry</h3>
+                        <h3 class="item-price">$115</>
+                    </div>
+                    <hr class="underline">
+                    <p class="item-description">Ipsum ipsum clita erat amet dolor justo diam</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="./images/menu-item.jpg" alt="menu item" class="item-img">
+                <div class="item-text">
+                    <div class="item-name">
+                        <h3 class="item-title">Chicken Chilli Dry</h3>
+                        <h3 class="item-price">$115</>
+                    </div>
+                    <hr class="underline">
+                    <p class="item-description">Ipsum ipsum clita erat amet dolor justo diam</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="./images/menu-item.jpg" alt="menu item" class="item-img">
+                <div class="item-text">
+                    <div class="item-name">
+                        <h3 class="item-title">Chicken Chilli Dry</h3>
+                        <h3 class="item-price">$115</>
+                    </div>
+                    <hr class="underline">
+                    <p class="item-description">Ipsum ipsum clita erat amet dolor justo diam</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="./images/menu-item.jpg" alt="menu item" class="item-img">
+                <div class="item-text">
+                    <div class="item-name">
+                        <h3 class="item-title">Chicken Chilli Dry</h3>
+                        <h3 class="item-price">$115</>
+                    </div>
+                    <hr class="underline">
+                    <p class="item-description">Ipsum ipsum clita erat amet dolor justo diam</p>
+                </div>
+            </div>
+        </div>
 
     </section>
 
@@ -274,11 +458,11 @@
                 </div>
 
                 <form method="POST" class="res-form">
-                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="text" name="name" placeholder="Your Name" maxlength="50" required>
                     <input type="email" name="email" placeholder="Your Email" required>
                     <input type="datetime-local" name="datetime" placeholder="Date & Time" required>
                     <input type="number" name="numberpeople" placeholder="Number of People" required>
-                    <textarea name="req" id="" placeholder="Special Request"></textarea>
+                    <textarea name="req" id="" placeholder="Special Request" maxlength="250"></textarea>
                     <button type="submit" class="btn">Book Now</button>
                 </form>
             </div>
@@ -288,6 +472,7 @@
 
     <!-- scripts -->
     <script src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 </body>
 

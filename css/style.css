@@ -325,6 +325,14 @@ body {
     align-items: center;
     justify-content: center;
     padding-bottom: 5px;
+    border-bottom: 4px solid transparent;
+}
+
+.category:hover {
+    cursor: pointer;
+}
+
+.category.active {
     border-bottom: 4px solid #FEA116;
 }
 
@@ -382,11 +390,15 @@ body {
 }
 
 .items-container {
-    display: grid;
+    display: none;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 6rem;
     row-gap: 2rem;
     margin-top: 4rem;
+}
+
+.items-container.show {
+    display: grid;
 }
 
 /* RESERVATION */
