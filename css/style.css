@@ -233,7 +233,7 @@ body {
     font-weight: 100;
     font-size: 1.5rem;
     color: #FF9800;
-    margin-bottom: 0;
+    margin: 0;
 }
 
 .heading {
@@ -290,12 +290,11 @@ body {
 
 /* MENU */
 #menu {
-    padding-top: 4rem;
-    padding-bottom: 8rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 
 .menu-text {
@@ -390,6 +389,83 @@ body {
     margin-top: 4rem;
 }
 
+/* RESERVATION */
+#reservation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75vh;
+    width: 100%;
+    background-color: #0F172B;
+    margin: 0;
+}
+
+.res-img-container {
+    display: flex;
+    flex: 1;
+    height: 100%;
+    overflow: hidden;
+}
+
+.res-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.res-form-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.res-form-container .heading {
+    color: #fff;
+}
+
+.res-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 2rem;
+}
+
+.res-form {
+    display: grid;
+    grid-template-columns: repeat(1fr, 1fr);
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.res-form input,
+.res-form textarea {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    font-size: 1em;
+    font-family: Poppins, Arial, sans-serif;
+}
+
+.res-form textarea {
+    grid-column: span 2;
+    height: 80px;
+}
+
+.res-form button {
+    grid-column: span 2;
+}
+
+.form-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+}
 
 /* -------- Responsive CSS -------- */
 
