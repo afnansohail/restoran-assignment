@@ -236,6 +236,29 @@ body {
     margin: 0;
 }
 
+/* add a hortiztnal bar before and after title */
+.title::before {
+    content: '';
+    display: inline-block;
+    width: 50px;
+    height: 2px;
+    background-color: #FF9800;
+    vertical-align: middle;
+    margin-bottom: 8px;
+    margin-right: 1rem;
+}
+
+.title::after {
+    content: '';
+    display: inline-block;
+    width: 50px;
+    height: 2px;
+    background-color: #FF9800;
+    vertical-align: middle;
+    margin-bottom: 8px;
+    margin-left: 1rem;
+}
+
 .heading {
     font-size: 2.5rem;
     color: #0F172B;
@@ -482,7 +505,10 @@ body {
     display: flex;
     flex-direction: column;
     align-items: start;
+}
 
+.form-heading .title::before {
+    display: none;
 }
 
 /* TEAM MEMBERS */
