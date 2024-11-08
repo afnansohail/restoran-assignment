@@ -468,6 +468,12 @@ body {
     height: 80px;
 }
 
+/* add a drop shadow when from input is active */
+.res-form input:focus,
+.res-form textarea:focus {
+    box-shadow: 0 0 10px #ffffff8a;
+}
+
 .res-form button {
     grid-column: span 2;
 }
@@ -477,6 +483,15 @@ body {
     flex-direction: column;
     align-items: start;
 
+}
+
+/* TEAM MEMBERS */
+#team {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
 }
 
 /* -------- Responsive CSS -------- */
