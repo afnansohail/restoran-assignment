@@ -74,3 +74,23 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+// Scroll to top
+document.addEventListener("DOMContentLoaded", function () {
+  const scrollBtn = document.querySelector(".scroll-btn");
+
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > 100) {
+      scrollBtn.classList.add("scrolling");
+    } else {
+      scrollBtn.classList.remove("scrolling");
+    }
+  });
+
+  scrollBtn.addEventListener("click", function () {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  });
+});

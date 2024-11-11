@@ -236,7 +236,6 @@ body {
     margin: 0;
 }
 
-/* add a hortiztnal bar before and after title */
 .title::before {
     content: '';
     display: inline-block;
@@ -491,7 +490,6 @@ body {
     height: 80px;
 }
 
-/* add a drop shadow when from input is active */
 .res-form input:focus,
 .res-form textarea:focus {
     box-shadow: 0 0 10px #ffffff8a;
@@ -598,6 +596,150 @@ body {
 .member-container {
     display: flex;
     gap: 4rem;
+}
+
+/* TESTIMONIALS */
+#testimonials {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    gap: 4rem;
+    background-color: #f1f8ff;
+}
+
+.test-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.test-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 2rem 0;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 5px;
+    border: #e6e6e6 2px solid;
+    gap: 1rem;
+}
+
+.test-card:hover {
+    background-color: #FEA116;
+    box-shadow: 0 0 20px #fea116d8;
+    border-color: transparent;
+    transition: color 0.1s ease;
+}
+
+.test-icon {
+    color: #FEA116;
+    width: auto;
+    height: 40px;
+    transition: color 0.1s ease;
+}
+
+.test-card:hover .test-icon {
+    color: #fff;
+}
+
+.test-card h3 {
+    font-size: 1.5rem;
+    transition: color 0.1s ease;
+    margin: 0;
+}
+
+.test-card:hover h3 {
+    color: #fff;
+}
+
+.test-details p {
+    font-size: 1rem;
+    margin: 0;
+    transition: color 0.1s ease;
+}
+
+.test-card:hover p {
+    color: #fff;
+}
+
+.test-details {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.test-txt {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.test-pic {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.test-content {
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+}
+
+/* FOOTER */
+#footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #272f41;
+    color: #fff;
+}
+
+.footer-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.footer-link {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.1s ease;
+}
+
+.footer-link:hover {
+    color: #FEA116;
+}
+
+.site-name {
+    text-decoration: underline;
+    text-underline-offset: 6px;
+}
+
+/* SCROLL BUTTON */
+.scroll-btn {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.scroll-btn svg {
+    fill: #FEA116;
+    border-radius: 5%;
+}
+
+.scrolling {
+    opacity: 1;
 }
 
 /* -------- Responsive CSS -------- */
