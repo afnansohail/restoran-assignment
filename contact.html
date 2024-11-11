@@ -6,10 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | Restoran</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="sweetalert2.min.css">
     <link href="./images/favicon.png" rel="icon">
 </head>
 
 <body>
+    <!-- Hero + Navbar -->
+    <div class="header">
+        <nav class="nav scrolled">
+            <div class="nav-container section">
+                <a href="./index.html">
+                    <img src="./images/Logo.png" alt="Reestoran Logo" class="header-logo">
+                </a>
+                <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="./index.html">Home</a></li>
+                    <li class="nav-item"><a href="./contact.html">Contact</a></li>
+                    <li class="nav-item"><button class="btn">Book A Table</button></li>
+                </ul>
+            </div>
+        </nav>
+
+        <section id="hero" class="section">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1>Enjoy Our Delicious Meals</h1>
+                        <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam
+                            amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita
+                            duo justo magna dolore erat amet</p>
+                    </div>
+                    <button class="btn">Book A Table</button>
+                </div>
+                <img src="./images/hero.png" alt="Hero Image" class="hero-img">
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer" class="section">
+        <p class="footer-name">© <span class="site-name">Your Site Name</span>, All Rights Reserved.</p>
+
+        <div class="footer-links">
+            <a href="./index.html" class="footer-link">Home</a>
+            <a href="./contact.html" class="footer-link">Contact</a>
+        </div>
+    </footer>
+
+
+    <!-- scripts -->
+    <script src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 </body>
 
