@@ -527,13 +527,19 @@ body {
     align-items: center;
     justify-content: center;
     gap: 1rem;
+    width: 220px;
+    height: 330px;
     padding: 2rem;
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.15);
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
     position: relative;
     overflow: hidden;
+}
+
+.member-card:hover {
+    transform: translateY(-10px)
 }
 
 .member-img {
@@ -541,12 +547,14 @@ body {
     height: 220px;
     border-radius: 100%;
     object-fit: cover;
+    margin-bottom: 1rem;
 }
 
 .member-details {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 1.5rem;
 }
 
 .member-details h3 {
@@ -565,7 +573,7 @@ body {
     opacity: 0;
     transition: opacity 0.3s ease;
     margin-top: 1rem;
-    margin-bottom: 0;
+    margin-bottom: -0.5rem;
     position: absolute;
     bottom: 0;
 }
@@ -581,6 +589,15 @@ body {
 .member-icon {
     width: auto;
     height: 40px;
+}
+
+.member-icon:hover {
+    cursor: pointer;
+}
+
+.member-container {
+    display: flex;
+    gap: 4rem;
 }
 
 /* -------- Responsive CSS -------- */
