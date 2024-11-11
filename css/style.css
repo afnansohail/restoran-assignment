@@ -13,7 +13,7 @@ body {
 }
 
 .section {
-    padding: 0rem 10rem;
+    padding: 0rem 8rem;
 }
 
 .btn {
@@ -42,12 +42,15 @@ body {
 #hero {
     background-position: center;
     position: relative;
+    height: 100vh;
+    display: flex;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
 }
 
 .header {
     background-image: url('../images/hero-bg.png');
     background-size: cover;
-    height: 100vh;
 }
 
 .header-logo {
@@ -109,7 +112,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 8rem 0;
+    gap: 3rem;
 }
 
 .hero-content {
@@ -117,10 +120,6 @@ body {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-}
-
-.hero-text {
-    max-width: 70%;
 }
 
 .hero-text h1 {
@@ -138,10 +137,10 @@ body {
 }
 
 .hero-img {
-    width: 60%;
     height: auto;
     animation: rotate-image 120s linear infinite;
     opacity: 0.8;
+    flex: 2 1 auto;
 }
 
 @keyframes rotate-image {
@@ -737,6 +736,8 @@ body {
 .scroll-btn svg {
     fill: #FEA116;
     border-radius: 5%;
+    /* soft grey drop shadow, make button look floating */
+    box-shadow: 0 5px 15px #00000025;
 }
 
 .scroll-btn:hover {
@@ -756,7 +757,8 @@ body {
 
 @media (max-width: 1024px) {
     .section {
-        padding: 0rem 3rem;
+        height: auto;
+        padding: 0rem 4rem;
     }
 
     .hero-container {
@@ -828,9 +830,92 @@ body {
 
     /* --- */
 
+    #menu {
+        height: auto;
+        padding: 4rem 0;
+    }
+
+    .item-img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .menu-item {
+        gap: 1rem;
+    }
+
+    .items-container {
+        display: none;
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 6rem;
+        row-gap: 2rem;
+        margin-top: 4rem;
+    }
+
+    .items-container.show {
+        display: grid;
+    }
+
+    /* --- */
+
+    #team {
+        height: auto;
+        padding: 4rem 0;
+    }
+
+    .member-card {
+        gap: 0rem;
+        width: auto;
+        height: auto;
+    }
+
+    .member-img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .member-details h3 {
+        font-size: 1.3rem;
+    }
+
+    .member-socials {
+        display: flex;
+        gap: 1rem;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        margin-top: 1rem;
+        position: absolute;
+        bottom: 0;
+    }
+
+    .member-card:hover .member-socials {
+        opacity: 1;
+    }
+
+
+    .member-icon {
+        width: auto;
+        height: 35px;
+    }
+
+    .member-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    /* --- */
+
+    #testimonials {
+        height: auto;
+        padding: 4rem 4rem;
+    }
+
+    /* --- */
+
     .scroll-btn {
-        bottom: 25px;
-        right: 25px;
+        bottom: 50px;
+        right: 30px;
     }
 
 
