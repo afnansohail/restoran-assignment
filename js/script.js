@@ -7,12 +7,12 @@ function handleScroll() {
   }
 }
 
+window.addEventListener("scroll", handleScroll);
+window.addEventListener("load", handleScroll);
+
 function toggleMenu() {
   document.querySelector(".nav-list").classList.toggle("active");
 }
-
-window.addEventListener("scroll", handleScroll);
-window.addEventListener("load", handleScroll);
 
 // Menu handling
 const categories = document.querySelectorAll(".category");

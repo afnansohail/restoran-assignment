@@ -41,15 +41,16 @@ body {
 /* HEADER */
 #hero {
     background-position: center;
-    position: relative;
-    height: 100vh;
     display: flex;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: -5rem;
 }
 
 .header {
     background-image: url('../images/hero-bg.png');
+    height: 100vh;
     background-size: cover;
 }
 
@@ -112,7 +113,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 3rem;
+    gap: 10rem;
 }
 
 .hero-content {
@@ -139,8 +140,6 @@ body {
 .hero-img {
     height: auto;
     animation: rotate-image 120s linear infinite;
-    opacity: 0.8;
-    flex: 2 1 auto;
 }
 
 @keyframes rotate-image {
@@ -159,7 +158,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 4rem;
+    padding: 4rem 8rem;
 }
 
 
@@ -921,6 +920,134 @@ body {
 
 }
 
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+    .btn {
+        padding: 12px 24px;
+        font-size: 1rem;
+    }
 
-@media (max-width: 480px) {}
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #0F172B;
+        width: 100%;
+        padding: 1rem 0;
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hero-container {
+        flex-direction: column;
+        gap: 4rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-img {
+        width: 70%;
+    }
+
+    .hero-text {
+        max-width: 100%;
+    }
+
+    .hero-text h1 {
+        text-align: center;
+    }
+
+    .hero-text p {
+        text-align: center;
+    }
+
+    .hero-content {
+        align-items: center;
+    }
+
+    .number-container {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        align-items: start;
+        justify-content: center;
+    }
+
+    .numbers {
+        margin-top: 0;
+    }
+
+    #about-us {
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .about-us-img {
+        width: auto;
+        height: auto;
+    }
+
+    .about-us-text {
+        max-width: 100%;
+    }
+
+    .about-us-text .title::before {
+        display: none;
+    }
+
+    #reservation {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .res-form-container {
+        padding: 4rem;
+    }
+
+    .test-container {
+        flex-direction: column;
+    }
+
+    .test-card {
+        width: 100%;
+        margin: 0;
+    }
+
+    #footer {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 2rem 0;
+    }
+
+    .footer-name,
+    .footer-links {
+        margin: 0;
+    }
+
+    .scroll-btn {
+        bottom: 25px;
+        right: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+    }
+
+    .btn {
+        padding: 12px 24px;
+        font-size: 1rem;
+    }
+}
