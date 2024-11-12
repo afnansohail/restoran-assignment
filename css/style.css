@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Poppins, Arial, sans-serif;
     margin: 0;
@@ -735,7 +739,6 @@ body {
 .scroll-btn svg {
     fill: #FEA116;
     border-radius: 5%;
-    /* soft grey drop shadow, make button look floating */
     box-shadow: 0 5px 15px #00000025;
 }
 
@@ -750,7 +753,147 @@ body {
 
 /* --------- CONTACT PAGE --------- */
 
+#contact-hero {
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
 
+.contact-hero-text h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    margin-top: 0;
+    color: #fff;
+    text-align: center;
+}
+
+.contact-hero-text p {
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+    margin-top: 0;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.contact-link {
+    color: #FEA116;
+}
+
+.contact-link-home {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contact-link-home:hover {
+    color: #FEA116;
+}
+
+.contact-header {
+    background-image: url('../images/hero-bg.png');
+    height: 40vh;
+    background-size: cover;
+}
+
+#contact-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    padding: 4rem 8rem;
+}
+
+
+.contact-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.contact-form {
+    display: grid;
+    grid-template-columns: repeat(1fr, 1fr);
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    font-size: 1em;
+    font-family: Poppins, Arial, sans-serif;
+}
+
+.contact-form textarea {
+    grid-column: span 2;
+    height: 80px;
+}
+
+.contact-form .contact-subj {
+    grid-column: span 2;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    box-shadow: 0 0 10px #ffffff8a;
+}
+
+.contact-form button {
+    grid-column: span 2;
+}
+
+.contact-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.c-title {
+    font-family: Pacifico, Arial, sans-serif;
+    font-weight: 100;
+    font-size: 1.5rem;
+    color: #FF9800;
+    margin: 0;
+}
+
+.contact-text-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10rem;
+}
+
+
+.c-title::after {
+    content: '';
+    display: inline-block;
+    width: 50px;
+    height: 2px;
+    background-color: #FF9800;
+    vertical-align: middle;
+    margin-bottom: 8px;
+    margin-left: 1rem;
+}
+
+.c-para {
+    font-size: 1.1rem;
+    color: #666565;
+    margin: 0;
+    font-weight: 400;
+}
+
+.c-desc {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
 
 /* -------- Responsive CSS -------- */
 
