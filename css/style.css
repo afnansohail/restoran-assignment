@@ -792,7 +792,6 @@ body {
     /* --- */
 
     .about-container {
-        display: grid;
         grid-template-columns: repeat(2, 1fr);
         justify-content: center;
         align-items: center;
@@ -1038,6 +1037,14 @@ body {
 }
 
 @media (max-width: 480px) {
+    .section {
+        padding: 0rem 3rem;
+    }
+
+    .header-logo {
+        width: 150px;
+    }
+
     .hero-text h1 {
         font-size: 2.5rem;
     }
@@ -1050,4 +1057,122 @@ body {
         padding: 12px 24px;
         font-size: 1rem;
     }
+
+    .hero-img {
+        width: 80%;
+        margin-top: 4rem;
+    }
+
+    #about {
+        padding: 0 3rem;
+    }
+
+    .about-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+    .about-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .about-card p {
+        font-size: 1rem;
+    }
+
+    #about-us {
+        padding: 2rem 3rem;
+    }
+
+    .about-us-img {
+        width: 100%;
+    }
+
+    .about-us-text {
+        max-width: 100%;
+    }
+
+    .about-us-text p {
+        font-size: 1rem;
+    }
+
+    .numbers {
+        gap: 1;
+    }
+
+    #menu-section {
+        padding: 2rem 3rem;
+    }
+
+    .categories-container {
+        flex-direction: row;
+        gap: 3rem;
+    }
+
+    .category {
+        gap: 0.5rem;
+    }
+
+    .category p {
+        font-size: 0.8rem;
+    }
+
+    .category-icon {
+        height: 30px;
+    }
+
+    .item-img {
+        width: 70px;
+        height: 70px;
+        object-fit: cover;
+    }
+
+    .item-name {
+        display: flex;
+        gap: 0;
+    }
+
+    .item-text {
+        width: auto;
+    }
+
+    .item-description {
+        font-size: 0.8rem;
+    }
+
+    .items-container {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        margin-top: 4rem;
+        width: 100%;
+    }
+
+    .items-container.show {
+        display: flex;
+    }
+
+    .res-form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .res-img {
+        height: 50vh;
+    }
+
+    #team {
+        padding: 2rem 3rem;
+    }
+
+    .member-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+        align-items: center;
+        width: 100%;
+    }
+
 }
