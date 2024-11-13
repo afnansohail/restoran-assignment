@@ -459,6 +459,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 2rem;
+
 }
 
 .res-form-container .heading {
@@ -976,7 +977,8 @@ body {
     }
 
     .menu-item {
-        gap: 1rem;
+        justify-content: center;
+        padding: 0 1rem;
     }
 
     .items-container {
@@ -1157,7 +1159,7 @@ body {
     }
 
     .res-form-container {
-        padding: 4rem;
+        /* padding: 4rem; */
     }
 
     .test-container {
@@ -1196,7 +1198,7 @@ body {
 
 @media (max-width: 480px) {
     .section {
-        padding: 0rem 3rem;
+        padding: 0rem 2rem;
     }
 
     .header-logo {
@@ -1209,6 +1211,14 @@ body {
 
     .hero-text p {
         font-size: 1rem;
+    }
+
+    .title::before {
+        display: none;
+    }
+
+    .title::after {
+        display: none;
     }
 
     .btn {
@@ -1264,7 +1274,8 @@ body {
 
     .categories-container {
         flex-direction: row;
-        gap: 3rem;
+        justify-content: center;
+        gap: 1.5rem;
     }
 
     .menu-text {
@@ -1294,12 +1305,17 @@ body {
         gap: 0;
     }
 
-    .item-text {
-        width: auto;
+    .item-title,
+    .item-price {
+        font-size: 1.2rem;
     }
 
     .item-description {
         font-size: 0.8rem;
+    }
+
+    .item-text {
+        width: auto;
     }
 
     .items-container {
