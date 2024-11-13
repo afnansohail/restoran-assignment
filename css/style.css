@@ -758,12 +758,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 2rem;
 }
 
 .contact-hero-text h1 {
     font-size: 4rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0;
     margin-top: 0;
     color: #fff;
     text-align: center;
@@ -771,8 +770,7 @@ body {
 
 .contact-hero-text p {
     font-size: 1.5rem;
-    margin-bottom: 3rem;
-    margin-top: 0;
+    margin: 0;
     text-align: center;
     color: #fff;
     text-transform: uppercase;
@@ -807,12 +805,14 @@ body {
 }
 
 
-.contact-form-container {
+.contact-formmap-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    gap: 4rem;
+    width: 100%;
 }
+
+
 
 .contact-form {
     display: grid;
@@ -865,9 +865,9 @@ body {
 
 .contact-text-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    gap: 10rem;
+    width: 100%;
 }
 
 
@@ -1057,6 +1057,19 @@ body {
     .scroll-btn {
         bottom: 50px;
         right: 30px;
+    }
+
+    .contact-formmap-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+    }
+
+    .contact-text-container {
+        justify-content: center;
+        gap: 2rem;
     }
 
 
@@ -1315,6 +1328,43 @@ body {
         grid-template-columns: repeat(1, 1fr);
         gap: 2rem;
         align-items: center;
+        width: 100%;
+    }
+
+    #contact-us {
+        padding: 2rem 3rem;
+    }
+
+    .contact-hero-text {
+        padding: 2rem 0;
+        margin-top: 1.5rem;
+    }
+
+    .contact-text-container {
+        flex-direction: column;
+        align-items: start;
+        gap: 3rem;
+    }
+
+    #contact-us .heading {
+        font-size: 2rem;
+    }
+
+    .contact-formmap-container {
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-form-container {
+        width: 100%;
+    }
+
+    .contact-img {
         width: 100%;
     }
 
