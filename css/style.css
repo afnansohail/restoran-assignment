@@ -1343,6 +1343,10 @@ body {
         flex-direction: column;
     }
 
+    .res-form-container {
+        padding: 1rem;
+    }
+
     .res-img {
         height: 50vh;
     }
