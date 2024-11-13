@@ -1158,10 +1158,6 @@ body {
         height: auto;
     }
 
-    .res-form-container {
-        /* padding: 4rem; */
-    }
-
     .test-container {
         flex-direction: column;
     }
@@ -1201,16 +1197,26 @@ body {
         padding: 0rem 2rem;
     }
 
+    .header {
+        height: auto;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
     .header-logo {
         width: 150px;
     }
 
+    .hero-container {
+        gap: 0;
+    }
+
     .hero-text h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .hero-text p {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
     .title::before {
