@@ -9,6 +9,9 @@ body {
     font-family: Poppins, Arial, sans-serif;
     margin: 0;
     padding: 0;
+    min-width: 320px;
+    min-height: 100vh;
+    box-sizing: border-box;
 }
 
 ::selection {
@@ -17,7 +20,8 @@ body {
 }
 
 .section {
-    padding: 0rem 8rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
 }
 
 .btn {
@@ -44,42 +48,41 @@ body {
 
 /* HEADER */
 #hero {
+    background-image: url('../images/hero-bg.png');
+    background-size: cover;
+    height: 100vh;
     background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.header {
-    background-image: url('../images/hero-bg.png');
-    height: 90vh;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .header-logo {
-    width: 200px;
+    width: auto;
     height: auto;
 }
 
 .nav {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    background-color: #0F172B;
+    padding: 2rem 0;
+    position: fixed;
+    z-index: 10;
+    background-color: transparent;
     transition: background-color 0.2s ease;
-    height: 10vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+}
+
+.nav.scrolled {
+    background-color: #0F172B;
 }
 
 .nav-list {
     display: flex;
     list-style: none;
     align-items: center;
+    justify-content: center;
     gap: 2rem;
 }
 
@@ -111,7 +114,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 15rem;
 }
 
 .hero-content {
@@ -119,18 +121,17 @@ body {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    margin-right: 8rem;
 }
 
 .hero-text h1 {
     font-size: 4rem;
-    margin-bottom: 1rem;
     margin-top: 0;
     color: #fff;
 }
 
 .hero-text p {
     font-size: 1.5rem;
-    margin-bottom: 3rem;
     margin-top: 0;
     color: #fff;
 }
@@ -1096,9 +1097,9 @@ body {
 
     .hero-container {
         flex-direction: column;
-        gap: 4rem;
         justify-content: center;
         align-items: center;
+        gap: 0rem;
     }
 
     .hero-img {
@@ -1195,30 +1196,43 @@ body {
 }
 
 @media (max-width: 480px) {
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+
     .section {
         padding: 0rem 3rem;
     }
 
     .header-logo {
-        width: 150px;
+        width: 140px;
     }
 
     .hero-text h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .hero-text p {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
     .btn {
         padding: 12px 24px;
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
     .hero-img {
         width: 80%;
-        margin-top: 4rem;
+        margin: 4rem;
     }
 
     #about {
@@ -1235,7 +1249,11 @@ body {
     }
 
     .about-card p {
-        font-size: 1rem;
+        font-size: 0.8rem;
+    }
+
+    .about-icon {
+        height: 35px;
     }
 
     #about-us {
@@ -1265,10 +1283,6 @@ body {
     .categories-container {
         flex-direction: row;
         gap: 3rem;
-    }
-
-    .menu-text {
-        text-align: center;
     }
 
     .category {
@@ -1377,6 +1391,10 @@ body {
 
     .contact-hero-text h1 {
         font-size: 2.5rem;
+    }
+
+    .heading {
+        font-size: 2rem;
     }
 
 }
