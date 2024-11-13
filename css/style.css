@@ -1186,6 +1186,14 @@ body {
         margin: 0;
     }
 
+    #contact-us .title {
+        text-align: center;
+    }
+
+    #contact-us .heading {
+        text-align: center;
+    }
+
     .scroll-btn {
         bottom: 25px;
         right: 25px;
@@ -1348,6 +1356,7 @@ body {
 
     #contact-us .heading {
         font-size: 2rem;
+        text-align: center;
     }
 
     .contact-formmap-container {
@@ -1366,6 +1375,10 @@ body {
 
     .contact-img {
         width: 100%;
+    }
+
+    .contact-hero-text h1 {
+        font-size: 2.5rem;
     }
 
 }
