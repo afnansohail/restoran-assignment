@@ -458,8 +458,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
-
 }
 
 .res-form-container .heading {
@@ -472,13 +470,18 @@ body {
     justify-content: center;
     align-items: start;
     gap: 2rem;
+    padding: 1rem;
+}
+
+.res-form input[type="datetime-local"] {
+    width: calc(100% - 2rem);
+    /* Adjust width to maintain gap */
 }
 
 .res-form {
     display: grid;
     grid-template-columns: repeat(1fr, 1fr);
     gap: 1.5rem;
-    width: 100%;
 }
 
 .res-form input,
