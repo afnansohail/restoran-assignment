@@ -470,12 +470,11 @@ body {
     justify-content: center;
     align-items: start;
     gap: 2rem;
-    padding: 1rem;
+    padding: 2rem;
 }
 
 .res-form input[type="datetime-local"] {
-    width: calc(100% - 2rem);
-    /* Adjust width to maintain gap */
+    grid-column: span 1;
 }
 
 .res-form {
@@ -791,6 +790,9 @@ body {
     background-image: url('../images/hero-bg.png');
     height: 40vh;
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #contact-us {
